@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:textStyle="italic"
+    android:layout_height="match_parent">
+
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button android:textColor="#ffffff" android:id="@+id/perm_granted"
+                android:background="@color/colorPrimary" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_margin="10dp"
+                android:text="GRANT PERMISSION" />
+            <android.support.v7.widget.CardView 
+                android:layout_gravity="center"
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/radio"
+                android:layout_marginTop="10dp" 
+                android:layout_marginRight="10dp">
+
+                <RelativeLayout android:background="@drawable/radio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textStyle="bold|italic"
+                        android:textColor="@color/colorPrimary"
+                        android:textAlignment="center"
+                        android:id="@+id/device"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Android Device ID" />
+
+
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/device_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_below="@+id/device" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView 
+                android:textAlignment="center"
+                android:background="@drawable/radio"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+                <RelativeLayout android:layout_width="match_parent" android:background="@drawable/radio" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textStyle="bold|italic" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/device_imei" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="IMEI" />
+                    <TextView android:gravity="center" android:id="@+id/imei" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_below="@+id/device_imei" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:textAlignment="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" >
+                <RelativeLayout android:background="@drawable/radio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textStyle="bold|italic" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/sim_serial_he" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Sim Serial Number" />
+                    <TextView android:gravity="center" android:id="@+id/sim_serial" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_below="@+id/sim_serial_he" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:textAlignment="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+                <RelativeLayout android:background="@drawable/radio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textStyle="bold|italic" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/sim_comp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Sim Company" />
+                    <TextView android:gravity="center" android:id="@+id/sim_company" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_below="@+id/sim_comp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:textAlignment="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+                <RelativeLayout android:background="@drawable/radio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textStyle="bold|italic" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/sim_sub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Sim Subscriber ID" />
+                    <TextView android:gravity="center" android:id="@+id/sim_subscriber" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_below="@+id/sim_sub" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:textAlignment="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp">
+                <RelativeLayout android:background="@drawable/radio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textStyle="bold|italic" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/disp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Mobile Display" />
+                    <TextView android:gravity="center" android:id="@+id/mobile_display" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_below="@+id/disp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:textAlignment="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" >
+                <RelativeLayout android:background="@drawable/radio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textStyle="bold|italic" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/hard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Mobile Hardware" />
+                    <TextView android:gravity="center" android:id="@+id/mobile_hardware" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_below="@+id/hard" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:textAlignment="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" >
+                <RelativeLayout android:background="@drawable/radio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textStyle="bold|italic" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/fingr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="FingerPrint" />
+                    <TextView android:gravity="center" android:id="@+id/mobile_fingure_print" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_below="@+id/fingr" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:textAlignment="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" >
+                <RelativeLayout android:background="@drawable/radio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textStyle="bold|italic" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/manu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Mobile Manufacturer" />
+                    <TextView android:gravity="center" android:id="@+id/mobile_manufacturer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_below="@+id/manu" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:textAlignment="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp">
+                <RelativeLayout android:background="@drawable/radio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textStyle="bold|italic" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/model" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Mobile Model" />
+                    <TextView android:gravity="center" android:id="@+id/mobile_model" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_below="@+id/model" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:textAlignment="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp">
+                <RelativeLayout android:background="@drawable/radio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textStyle="bold|italic" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/mac" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="WI-FI Mac Address" />
+                    <TextView android:gravity="center" android:id="@+id/mac_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_below="@+id/mac" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:textAlignment="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp">
+                <RelativeLayout android:background="@drawable/radio" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textStyle="bold|italic" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/ip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Local IP Address" />
+                    <TextView android:gravity="center" android:id="@+id/ip_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:layout_below="@+id/ip" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
